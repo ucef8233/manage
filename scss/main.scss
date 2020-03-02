@@ -1,0 +1,38 @@
+$BRed : hsl(12, 88%, 59%);
+$DBlue : hsl(228, 39%, 23%);
+$DGBlue : hsl(227, 12%, 61%);
+$VDBlue: hsl(233, 12%, 13%);
+$VRed: hsl(13, 100%, 96%);
+$VGray: hsl(0, 0%, 98%);
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam', sans-serif  ;
+}
+.container{
+  max-width: 1440px;
+  margin: 0px auto;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3em;
+  &__logo{
+    margin-top: 0.7em;
+  }
+&__link{
+  margin : 0rem 1em;
+  color: $DBlue;
+  &--btn{
+       background-color: $BRed;
+       color: $VGray;
+  }
+}
+  a{
+    text-decoration: none;
+  }
+}
+

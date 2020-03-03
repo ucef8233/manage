@@ -1,0 +1,181 @@
+@import 'mixin';
+@import 'variable';
+
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+  background: url('../images/bg-tablet-pattern.svg') no-repeat;
+  background-position-x: 51em;
+  background-position-y: -10em;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3em;
+  overflow: hidden;
+
+  &__logo {
+    margin-top: 0.7em;
+  }
+
+  &__link {
+    margin: 0em 1em;
+    color: $VDBlue;
+    font-weight: 500;
+
+    &:hover {
+      color: $DGBlue;
+      transition: .5s;
+    }
+
+    &--btn {
+      @include btn;
+    }
+  }
+
+
+  .icon {
+    color: $DBlue;
+    font-size: 3em;
+    display: none;
+    cursor: pointer;
+  }
+}
+
+.header {
+  &__main {
+    display: flex;
+    justify-content: space-around;
+    height: 71vh;
+    padding: 6em 3em;
+  }
+
+  &__text {
+    max-width: 35em;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 3.8em;
+    line-height: 1.2;
+    margin: 1em 0em .6em 0em;
+    color: $DBlue;
+  }
+
+  &__parag {
+    color: $DGBlue;
+    margin-bottom: 2.8em;
+    line-height: 1.5;
+  }
+
+
+
+  &__img {
+    height: 32em;
+  }
+}
+
+
+
+@media (max-width: 1440px) {
+  @include bgPosition(0.9rem, 49em, -22em);
+}
+
+@media (max-width: 1100px) {
+  @include bgPosition(0.8rem, 45em, -35em);
+}
+
+
+@media (max-width: 840px) {
+  .navbar {
+    justify-content: space-between;
+    margin: 0em 2em;
+
+    .icon {
+      display: block;
+    }
+
+    &__main {
+      display: none;
+    }
+
+    &__link {
+      &--btn {
+        display: none;
+      }
+    }
+  }
+
+  .header {
+    &__btn {
+      display: inline-block;
+    }
+  }
+
+  .respNav {
+
+    @include respoNbar (45%, 30%, 9%, 53%);
+
+    a {
+      font-size: 2.5em;
+    }
+  }
+
+}
+
+@media (max-width: 770px) {
+
+  @include bgPosition(0.92rem, 12em, -23em);
+
+  .header {
+    &__main {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      margin-top: 20em;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+
+  .respNav {
+
+    @include respoNbar (50%, 40%, 10%, 46%);
+  }
+}
+
+@media (max-width: 520px) {
+  * {
+    font-size: .82rem;
+  }
+
+  .header {
+    &__main {
+      margin-top: 10em;
+    }
+  }
+
+  .respNav {
+    @include respoNbar (90%, 40%, 10%, 5%);
+  }
+}
+
+// 375
+// position: fixed;
+// width: 94%;
+// height: 20%;
+// border-radius: 20px;
+// background: #fafafa;
+// top: 6%;
+// left: 3%;
+// text-align: center;
+// display: flex;
+// flex-direction: column;
+// padding: 1em 0em;
+// line-height: 2;
+
+
+// margin-top: -14em;

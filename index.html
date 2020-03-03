@@ -1,31 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/5ef935a943.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
+
 <body>
   <div class="container">
-    <nav class="navbar">
-      <div class="navbar__logo">
-        <a href="#"><img src="images/logo.svg" alt=""></a>
+    <header>
+      <!-- Nav bar -->
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="#"><img src="images/logo.svg" alt=""></a>
+        </div>
+        <div class="navbar__main" id="myNav">
+          <a class="navbar__link" href="#">Pricing</a>
+          <a class="navbar__link" href="#">Product</a>
+          <a class="navbar__link" href="#">About Us</a>
+          <a class="navbar__link" href="#">Careers</a>
+          <a class="navbar__link" href="#">Community</a>
+        </div>
+        <a class="navbar__link navbar__link--btn" href="#">Get Started</a>
+        <a class="icon" onclick="myFunction()">
+          <img src="images/icon-hamburger.svg" alt=""> </a>
+      </nav>
+      <!-- end navbar -->
+      <section class="header__main" id="Nav">
+        <div class="header__text">
+          <h1 class="header__title">Bring everyone together to build better products.</h1>
+          <p class="header__parag">Manage makes it simple for software teams <br> to plan day-to-day tasks while keeping
+            the <br>
+            targer team goals in view</p>
+          <a class="navbar__link--btn header__btn" href="#">Get Started</a>
+        </div>
+        <img class="header__img" src="images/illustration-intro.svg" alt="">
+      </section>
+    </header>
+    <main class="main">
+      <div class="main__sect1">
+        <h2 class="main__title">What's different about Manage? </h2>
+        <p class="main__parag">Manage provides all the functionality your <br> team needs, without the complexity. Our
+          <br>
+          software is tailor-made for modern digital <br>
+          product teams </p>
       </div>
-      <div class="navbar__main" id="myNav">
-        <a class="navbar__link" href="#">Pricing</a> 
-        <a class="navbar__link" href="#">Product</a> 
-        <a class="navbar__link" href="#">About Us</a> 
-        <a class="navbar__link" href="#">Careers</a>
-        <a class="navbar__link" href="#">Community</a>
-      </div>
-      <a class="navbar__link navbar__link--btn" href="#">Get Started</a>
+      <div class="main__sect2">
+        <article class="main__article">
+          <div class="main__title2">
+            <p class="main__btn">01</p>
+            <h3 class="main__h3">Track company-wide progress</h3>
+          </div>
+          <p class="main__parag">See how your day-to-day tasks fit into the wider vision. Go form tracking progress at
+            the milestone level all the way done to the smallest ok details. Never lose sight of the bigger picture
+            again. </p>
+        </article>
+        <article class="main__article">
+          <div class="main__title2">
+            <p class="main__btn">02</p>
+            <h3 class="main__h3">Advanced built-in reports</h3>
+          </div>
+          <p class="main__parag">
+            Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps
+            you build out the reports you need to keel key stakholders informed.
+          </p>
+        </article>
+        <article class="main__article">
+          <div class="main__title2">
+            <p class="main__btn">03</p>
+            <h3 class="main__h3">Everything you need in one place</h3>
+          </div>
+          <p class="main__parag">
+            Stop jumping from one service to another to communicate, store files,track tasks and share documents. Manage
+            offers an all-in-one team productivity solution
+          </p>
+        </article>
 
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fas fa-bars"></i></a>
-    </nav>
+      </div>
+    </main>
   </div>
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

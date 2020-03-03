@@ -3,11 +3,17 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Be Vietnam', sans-serif; }
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 1rem; }
+  * a {
+    text-decoration: none; }
 
 .container {
   max-width: 1440px;
-  margin: 0px auto; }
+  margin: 0px auto;
+  background: url("../images/bg-tablet-pattern.svg") no-repeat;
+  background-position-x: 51em;
+  background-position-y: -10em; }
 
 .navbar {
   display: flex;
@@ -18,30 +24,67 @@
   .navbar__logo {
     margin-top: 0.7em; }
   .navbar__link {
-    margin: 0rem 1em;
-    color: #1d1e25; }
+    margin: 0em 1em;
+    color: #1d1e25;
+    font-weight: 500; }
     .navbar__link:hover {
       color: #9095a7;
       transition: .5s; }
     .navbar__link--btn {
       background-color: #f25f3a;
       color: #fafafa;
-      padding: 1em 2em;
+      padding: .7em 2em;
       border: 1px solid transparent;
       border-radius: 30px; }
       .navbar__link--btn:hover {
         background-color: #fafafa;
         color: #9095a7;
         transition: .5s; }
-  .navbar a {
-    text-decoration: none; }
   .navbar .icon {
     color: #242d52;
     font-size: 3em;
     display: none;
     cursor: pointer; }
 
-@media (max-width: 920px) {
+.header__main {
+  display: flex;
+  justify-content: space-around;
+  height: 71vh;
+  padding: 6em 3em; }
+
+.header__text {
+  max-width: 35em; }
+
+.header__title {
+  font-weight: 700;
+  font-size: 3.8em;
+  line-height: 1.2;
+  margin: 1em 0em .6em 0em;
+  color: #242d52; }
+
+.header__parag {
+  color: #9095a7;
+  margin-bottom: 2.8em;
+  line-height: 1.5; }
+
+.header__img {
+  height: 32em; }
+
+@media (max-width: 1440px) {
+  * {
+    font-size: 0.9rem; }
+  .container {
+    background-position-x: 49em;
+    background-position-y: -22em; } }
+
+@media (max-width: 1100px) {
+  * {
+    font-size: 0.8rem; }
+  .container {
+    background-position-x: 45em;
+    background-position-y: -35em; } }
+
+@media (max-width: 840px) {
   .navbar {
     justify-content: space-between;
     margin: 0em 2em; }
@@ -51,18 +94,109 @@
       display: none; }
     .navbar__link--btn {
       display: none; }
+  .header__btn {
+    display: inline-block; }
+  .respNav {
+    position: fixed;
+    width: 45%;
+    height: 30%;
+    border-radius: 20px;
+    background: #fafafa;
+    top: 9%;
+    left: 53%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0em;
+    line-height: 2; }
+    .respNav a {
+      font-size: 2.5em; } }
+
+@media (max-width: 770px) {
+  * {
+    font-size: 0.92rem; }
+  .container {
+    background-position-x: 12em;
+    background-position-y: -23em; }
+  .header__main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 20em; }
+  .header__text {
+    text-align: center; }
+  .respNav {
+    position: fixed;
+    width: 50%;
+    height: 40%;
+    border-radius: 20px;
+    background: #fafafa;
+    top: 10%;
+    left: 46%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0em;
+    line-height: 2; } }
+
+@media (max-width: 520px) {
+  * {
+    font-size: .82rem; }
+  .header__main {
+    margin-top: 10em; }
   .respNav {
     position: fixed;
     width: 90%;
-    height: 55%;
+    height: 40%;
     border-radius: 20px;
     background: #fafafa;
-    top: 15%;
+    top: 10%;
     left: 5%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    font-size: 3em;
-    padding: 2rem 0rem;
-    line-height: 2;
-    transition: all .5s; } }
+    padding: 1em 0em;
+    line-height: 2; } }
+
+.main {
+  display: flex;
+  justify-content: space-around; }
+  .main__sect1 {
+    max-width: 38em; }
+  .main__sect2 {
+    max-width: 27em; }
+  .main__article {
+    margin-bottom: 1em; }
+  .main__title {
+    font-weight: 700;
+    font-size: 2.8em;
+    line-height: 1.2;
+    margin-bottom: .6em; }
+  .main__parag {
+    color: #9095a7;
+    line-height: 1.5; }
+  .main__title2 {
+    display: flex;
+    margin: 0em 0em 1em -7em; }
+  .main__btn {
+    background-color: #f25f3a;
+    color: #fafafa;
+    padding: .7em 2em;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: inline-block; }
+    .main__btn:hover {
+      background-color: #fafafa;
+      color: #9095a7;
+      transition: .5s; }
+  .main__h3 {
+    margin: .65em 0em 0em 2em; }
+  .main__parag {
+    display: inline; }
+
+@media (max-width: 770px) {
+  .main {
+    flex-wrap: wrap; }
+    .main__sect1 {
+      text-align: center; }
+    .main__title2 {
+      background-color: #ffefeb; } }

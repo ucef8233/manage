@@ -1,0 +1,70 @@
+@import 'mixin';
+@import 'variable';
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  // padding: em 3em;
+
+  &__sect1 {
+    max-width: 38em;
+  }
+
+  &__sect2 {
+    max-width: 27em;
+
+  }
+
+  &__article {
+    margin-bottom: 1em;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2.8em;
+    line-height: 1.2;
+    margin-bottom: .6em;
+  }
+
+  &__parag {
+    color: $DGBlue;
+    line-height: 1.5;
+  }
+
+  &__title2 {
+    display: flex;
+    margin: 0em 0em 1em -7em;
+
+  }
+
+  &__btn {
+    @include btn;
+    display: inline-block;
+  }
+
+  &__h3 {
+    margin: .65em 0em 0em 2em;
+  }
+
+  &__parag {
+    display: inline;
+  }
+}
+
+@media (max-width: 770px) {
+  .main {
+    flex-wrap: wrap;
+
+    &__sect1 {
+      text-align: center;
+    }
+
+    // &__article {
+    //   align-items: center;
+    // }
+
+    &__title2 {
+      background-color: $VRed;
+    }
+  }
+}

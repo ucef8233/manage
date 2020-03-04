@@ -27,13 +27,12 @@
   }
 
   &__parag {
-    color: $DGBlue;
-    line-height: 1.5;
+    @include parag;
   }
 
   &__title2 {
     display: flex;
-    margin: 0em 0em 1em -7em;
+    margin-left: -7em;
 
   }
 
@@ -55,16 +54,24 @@
   .main {
     flex-wrap: wrap;
 
-    &__sect1 {
-      text-align: center;
+    &__article {
+      margin-bottom: 2em;
     }
 
-    // &__article {
-    //   align-items: center;
-    // }
+    &__sect1 {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    &__sect2 {
+      max-width: 31em;
+
+    }
 
     &__title2 {
       background-color: $VRed;
+      margin: 0em;
+
     }
   }
 }

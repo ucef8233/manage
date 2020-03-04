@@ -24,16 +24,23 @@
   padding: 1em 0em;
   line-height: 2;
 }
- @mixin btn {
-   background-color: $BRed;
-   color: $VGray;
-   padding: .7em 2em;
-   border: 1px solid transparent;
-   border-radius: 30px;
 
-   &:hover {
-     background-color: $VGray;
-     color: $DGBlue;
-     transition: .5s;
-   }
- }
+@mixin btn {
+  background-color: $BRed;
+  color: $VGray;
+  padding: .7em 2em;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $VGray;
+    color: $DGBlue;
+    transition: .5s;
+  }
+}
+
+@mixin parag {
+  color: $DGBlue;
+  line-height: 1.5;
+}

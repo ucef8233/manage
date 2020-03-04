@@ -65,9 +65,9 @@
   }
 
   &__parag {
-    color: $DGBlue;
+    @include parag;
     margin-bottom: 2.8em;
-    line-height: 1.5;
+
   }
 
 
@@ -163,19 +163,14 @@
   }
 }
 
-// 375
-// position: fixed;
-// width: 94%;
-// height: 20%;
-// border-radius: 20px;
-// background: #fafafa;
-// top: 6%;
-// left: 3%;
-// text-align: center;
-// display: flex;
-// flex-direction: column;
-// padding: 1em 0em;
-// line-height: 2;
+@media (max-width: 380px) {
+  .header {
+    &__main {
+      margin-top: 16em;
+    }
+  }
 
-
-// margin-top: -14em;
+  .respNav {
+    @include respoNbar (94%, 31%, 10%, 3%);
+  }
+}

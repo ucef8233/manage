@@ -1,11 +1,15 @@
 @import 'mixin';
 @import 'variable';
 
+main {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+
 .main {
   display: flex;
-  justify-content: space-around;
-  // padding: em 3em;
-
+  justify-content: space-between;
   &__sect1 {
     max-width: 38em;
   }

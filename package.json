@@ -17,9 +17,11 @@
   "author": "ecoteam",
   "license": "ISC",
   "dependencies": {
+    "bxslider": "^4.2.14",
     "live-server": "^1.2.1",
     "node": "^13.8.0",
-    "sass": "^1.25.0"
+    "sass": "^1.25.0",
+    "swiper": "^5.3.6"
   },
   "devDependencies": {
     "concat": "^1.0.3",

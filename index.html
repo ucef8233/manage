@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="/node_modules/bxslider/dist/jquery.bxslider.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/node_modules/bxslider/dist/jquery.bxslider.min.js"></script> -->
   <title>Document</title>
 </head>
 
@@ -28,18 +31,21 @@
           <img src="images/icon-hamburger.svg" alt=""> </a>
       </nav>
       <!-- end navbar -->
+    </header>
+    <main>
       <section class="header__main" id="Nav">
         <div class="header__text">
           <h1 class="header__title">Bring everyone together to build better products.</h1>
-          <p class="header__parag">Manage makes it simple for software teams <br> to plan day-to-day tasks while keeping
+          <p class="header__parag">Manage makes it simple for software teams <br> to plan day-to-day tasks while
+            keeping
             the <br>
             targer team goals in view</p>
           <a class="navbar__link--btn header__btn" href="#">Get Started</a>
         </div>
         <img class="header__img" src="images/illustration-intro.svg" alt="">
       </section>
-    </header>
-    <main>
+
+
       <div class="main">
         <div class="main__sect1">
           <h2 class="main__title">What's different about Manage? </h2>
@@ -81,39 +87,89 @@
           </article>
         </div>
       </div>
-      <div class="slider">
-        <h1 class="slider__title"></h1>
-        <div class="slider__articles">
-          <article class="slider__article">
+      <div class="slide" id="slide">
+        <h1 class="slider__title">What they've said</h1>
+        <div class="slider slider__articles">
+          <div class="slider__article">
             <img src="images/avatar-anisha.png" alt="" class="slider__img">
-            <h3 class="slider__title2">Anisha Li</h3>
-            <p class="slider__parag"> &ldquo;Manahe has supercharged our team's workflow. the ability to maintain
-              visibility an larger milestones at all tiems keeps everyone motivated &rdquo;</p>
-          </article>
-          <article class="slider__article">
+            <div class="slider__text">
+              <h3 class="slider__title2">Anisha Li</h3>
+              <p class="slider__parag"> &ldquo;Manahe has supercharged our team's workflow. the ability to maintain
+                visibility an larger milestones at all tiems keeps everyone motivated &rdquo;</p>
+            </div>
+          </div>
+          <div class="slider__article">
             <img src="images/avatar-ali.png" alt="" class="slider__img">
-            <h3 class="slider__title2">Ali Bravo</h3>
-            <p class="slider__parag"> &ldquo;We have been able to cancel so many other subscription since using Manage.
-              there is no more cross-channel confusion and everyone is much more focused &rdquo;</p>
-          </article>
-          <article class="slider__article">
+            <div class="slider__text">
+              <h3 class="slider__title2">Ali Bravo</h3>
+              <p class="slider__parag"> &ldquo;We have been able to cancel so many other subscription since using
+                Manage.
+                there is no more cross-channel confusion and everyone is much more focused &rdquo;</p>
+            </div>
+          </div>
+          <!-- <div class="slider__article">
             <img src="images/avatar-richard.png" alt="" class="slider__img">
-            <h3 class="slider__title2">Richard watts</h3>
-            <p class="slider__parag"> &ldquo; Manage allows us to provide structure and process? it keeps us organized
-              and
-              focused. I can't stop recommending them to eveyone I talk to!&rdquo;</p>
-          </article>
-          <article class="slider__article">
+            <div class="slider__text">
+              <h3 class="slider__title2">Richard watts</h3>
+              <p class="slider__parag"> &ldquo; Manage allows us to provide structure and process? it keeps us organized
+                and
+                focused. I can't stop recommending them to eveyone I talk to!&rdquo;</p>
+            </div>
+          </div> -->
+          <!-- <div class="slider__article">
             <img src="images/avatar-shanai.png" alt="" class="slider__img">
-            <h3 class="slider__title2">Shanai Gough</h3>
-            <p class="slider__parag"> &ldquo;Their software allows us to track, manage and collaborate on our project
-              from
-              anywhere. it keeps the whole team in-sync without being instrusive. &rdquo;</p>
-          </article>
+            <div class="slider__text">
+              <h3 class="slider__title2">Shanai Gough</h3>
+              <p class="slider__parag"> &ldquo;Their software allows us to track, manage and collaborate on our project
+                from
+                anywhere. it keeps the whole team in-sync without being instrusive. &rdquo;</p>
+            </div>
+          </div> -->
         </div>
-
+        <a class="navbar__link--btn header__btn header__btn--center" href="#">Get Started</a>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footer__header">
+        <h2 class="footer__title">Simplify how your team works today.</h2>
+        <a class="navbar__link--btn header__btn header__btn--color" href="#">Get Started</a>
+      </div>
+      <div class="footer__parent">
+        <div class="footer__parent--div1">
+          <img  class="logo" src="images/logo.svg" alt="">
+          <div class="footer__icon test">
+            <img src="images/icon-facebook.svg" alt="">
+            <img src="images/icon-facebook.svg" alt="">
+            <img src="images/icon-facebook.svg" alt="">
+            <img src="images/icon-facebook.svg" alt="">
+            <img src="images/icon-facebook.svg" alt="">
+          </div>
+        </div>
+        <div class="footer__parent--div2">
+          <ul>
+            <li>Home</li>
+            <li>Pricing</li>
+            <li>Products</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+        <div class="footer__parent--div3">
+          <ul>
+            <li>Careers</li>
+            <li>Community</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="footer__parent--div4">
+          <form action="">
+            <input type="text" id="lname" name="lname">
+            <input class="navbar__link--btn header__btn" type="submit" value="Go">
+          </form>
+        </div>
+      </div>
+      <p class="footer__copy">Copyright 2020 All Rights Reserved</p>
+
+    </footer>
   </div>
   <script src="js/script.js"></script>
 </body>

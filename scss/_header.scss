@@ -1,19 +1,22 @@
 @import 'mixin';
 @import 'variable';
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
-  max-width: 1440px;
-  margin: 0px auto;
-  background: url('../images/bg-tablet-pattern.svg') no-repeat;
-  background-position-x: 51em;
-  background-position-y: -10em;
+  background-image: url('../images/bg-tablet-pattern.svg'), url('../images/bg-tablet-pattern.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: 107%, -43%;
+  background-position-y: -12em, 69em;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding-top: 3em;
+  justify-content: space-between;
+  padding: 3em 3em 0em 3em;
   overflow: hidden;
 
   &__logo {
@@ -47,9 +50,9 @@
 .header {
   &__main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 71vh;
-    padding: 6em 3em;
+    padding: 6em 0em;
   }
 
   &__text {
@@ -70,7 +73,17 @@
 
   }
 
+  &__btn {
+    &--center {
+      margin-left: 46%;
+      margin-top: 3em
+    }
 
+    &--color {
+      background-color: $VGray;
+      color: $BRed;
+    }
+  }
 
   &__img {
     height: 32em;
@@ -80,11 +93,30 @@
 
 
 @media (max-width: 1440px) {
-  @include bgPosition(0.9rem, 49em, -22em);
+  * {
+    font-size: .9rem;
+  }
+
+  .header {
+    &__main {
+
+      justify-content: space-around;
+      padding: 4em 0em;
+      height: 55vh;
+    }
+  }
+
+
+  .main {
+
+    justify-content: space-around !important;
+  }
 }
 
 @media (max-width: 1100px) {
-  @include bgPosition(0.8rem, 45em, -35em);
+  * {
+    font-size: .8rem;
+  }
 }
 
 
@@ -123,17 +155,27 @@
     }
   }
 
+
+
 }
 
 @media (max-width: 770px) {
 
-  @include bgPosition(0.92rem, 12em, -23em);
+  * {
+    font-size: .92rem;
+  }
+
+  .footer {
+    &__header {
+      text-align: center;
+    }
+  }
 
   .header {
     &__main {
       display: flex;
       flex-wrap: wrap-reverse;
-      margin-top: 20em;
+      margin-top: 30em;
     }
 
     &__text {
@@ -145,6 +187,48 @@
 
     @include respoNbar (50%, 40%, 10%, 46%);
   }
+
+  .footer {
+    &__icon {
+      img {
+        height: 1.7em;
+        margin-left: -11.5em !important;
+      }
+    }
+
+    &__parent {
+      justify-content: space-around !important;
+      flex-wrap: wrap-reverse;
+      padding: 4em 2em 0em 2em !important;
+
+      &--div4 {
+        width: 100%;
+        align-items: center !important;
+
+        input:nth-child(1) {
+          padding: 0.7em 4em !important;
+          border-radius: 50px;
+        }
+      }
+
+      &--div2 {
+        margin-bottom: 3em;
+      }
+
+      &--div1 {
+        flex-direction: column-reverse !important;
+        width: 47em;
+        text-align: center;
+        margin-left: 40%;
+
+        .logo {
+          width: 20em;
+        }
+      }
+    }
+  }
+
+
 }
 
 @media (max-width: 520px) {
@@ -154,7 +238,7 @@
 
   .header {
     &__main {
-      margin-top: 10em;
+      margin-top: 21em;
     }
   }
 

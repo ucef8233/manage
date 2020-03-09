@@ -1,0 +1,79 @@
+@import 'variable';
+@import 'mixin';
+
+.footer {
+  &__header {
+    // background: url('../images/illustration-intro.svg');
+    background-color: $BRed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 15em;
+    align-items: center;
+    color: white;
+    padding: 0em 9em;
+  }
+
+  &__title {
+    font-size: 2em;
+    max-width: 12em;
+  }
+
+  &__icon {
+    img {
+      height: 1.7em;
+      margin-left: .5em;
+    }
+  }
+
+  &__parent {
+    display: flex;
+    justify-content: space-between;
+    background-color: $VDBlue;
+    padding: 4em 9em 0em 9em;
+    color: $VGray;
+
+
+
+    &--div1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    &--div2 {
+      ul {
+        list-style-type: none;
+        line-height: 2.5;
+      }
+    }
+
+    &--div3 {
+      ul {
+        list-style-type: none;
+        line-height: 2.5;
+      }
+    }
+
+    &--div4 {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      input:nth-child(1) {
+        padding: 0.7em 2em;
+        border-radius: 50px;
+      }
+
+      form {
+        margin-bottom: 4em;
+      }
+    }
+  }
+
+  &__copy {
+    background-color: $VDBlue;
+    text-align: right;
+    color: $VGray;
+  }
+}

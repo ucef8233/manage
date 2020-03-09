@@ -1,14 +1,14 @@
-@mixin bgPosition ($fontSize, $bgPosX, $bgPosY) {
-  * {
-    font-size: $fontSize;
-  }
+// @mixin bgPosition ($fontSize, $bgPosX, $bgPosY) {
+//   * {
+//     font-size: $fontSize;
+//   }
 
-  .container {
-    background-position-x: $bgPosX;
-    background-position-y: $bgPosY;
+//   .container {
+//     background-position-x: $bgPosX;
+//     background-position-y: $bgPosY;
 
-  }
-}
+//   }
+// }
 
 @mixin respoNbar ($Rwidth, $Rheight, $Rtop, $Rleft) {
   position: fixed;

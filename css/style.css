@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,700&display=swap");
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 16px;
+    color: hsl(233, 12%, 13%);
+}
+
+#article1{
+    background-image:url('images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: -20rem;
+    background-position-x: 40rem;
+}
+nav{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    padding: 30px;
+    color: black;
+}
+a:hover{
+    color:hsl(227, 12%, 61%);
+}
+#icon{
+    display: none;
+}
+#start,#start2,#start3{
+    width: 110px;
+    height:35px ;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+    border: none;
+    font-size: 0.7rem;
+    border-radius: 25px;
+    outline: 0;
+}
+#start2{
+    margin: 40px;
+    margin-left: 0px;  
+}
+#start4{
+    width: 110px;
+    height:35px ;
+    margin:60px;
+    color:hsl(12, 88%, 59%);
+    background-color:white;
+    border: none;
+    font-size: 0.7rem;
+    border-radius: 25px;
+    outline: 0;
+}
+#btn{
+    height: 20vh;
+    text-align: center;
+}
+#start:hover,#start2:hover,#start3:hover{
+    background-color: hsla(12, 88%, 59%, 0.705);
+    box-shadow:0px 5px 10px hsla(12, 88%, 59%, 0.349);
+}
+
+#start4:hover{
+    background-color:hsla(12, 56%, 65%, 0.794);
+    color: white;
+    box-shadow:0px 5px 10px white;
+}
+#section1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 60px;
+}
+#manage{
+    grid-row:1/4 ;
+    grid-column:1/2 ;  
+}
+#number1{
+grid-row:1/2 ;
+grid-column:2/3 ;
+padding: 20px;
+}
+#number2{
+grid-row:2/3 ;
+grid-column:2/3 ;
+padding: 20px;
+}
+#number3{
+grid-row:3/4 ;
+grid-column:2/3 ;
+padding: 20px;
+}
+.span{
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    margin: 20px;
+    padding-left:20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: hsl(12, 88%, 59%);
+}
+.p{
+    color: hsl(227, 12%, 61%);
+    padding: 10px;
+    padding-left: 100px;
+    font-weight: 500;
+}
+#testimenial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div-testimenial{
+    text-align: center;
+}
+.min-div{
+    width: 600px;
+    height: 200px;
+    background-color: hsl(0, 0%, 98%);
+    margin:10px;
+    padding: 50px;
+    position: relative;
+    top: -40px;
+    z-index:-10;
+}
+.para-testimenial{
+    color: hsl(227, 12%, 61%);
+    font-weight: 500;
+    width: 500px;
+    text-align: center;
+}
+.avatar-testimenial{
+    width: 50px;
+    height: 50px;
+}
+#foot{
+    background-color: hsl(12, 88%, 59%);
+}
+#part1__footer{
+    background-image: url("images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-position-x:30px;
+    background-position-y: -150px;
+    display: flex;
+    justify-content: space-around;
+    height: 35vh;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+#part2__footer{
+    padding: 20px;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    overflow: hidden;
+}
+#logo{
+    grid-row:1/2;
+    grid-column:1/2;
+}
+#SM-footer{
+    grid-row:2/3;
+    grid-column:1/2;
+}
+svg{
+    cursor: pointer;
+    margin: 5px;
+}
+path:hover {
+    fill: hsl(12, 88%, 59%);
+}
+#lien{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    grid-row:1/3;
+    grid-column:2/3;
+}
+#list1 a,#list2 a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+    
+}
+#list1 a:hover,#list2 a:hover{
+    color: hsl(12, 88%, 59%);
+}
+#contact{
+    grid-row:1/2;
+    grid-column:3/4;
+    padding:20px;
+}
+#email{
+    width: 270px;
+    height: 40px;
+    border-radius: 18px;
+    outline: 0;
+    border: none;
+    
+}
+#go{
+    width: 80px;
+    height: 40px;
+    border-radius: 18px;
+    outline: 0;
+    border: none;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+}
+#go:hover{
+    background-color: hsl(12, 88%, 66%);
+}
+#copyright{
+    grid-row:2/3;
+    grid-column:3/4;
+    color: hsl(227, 12%, 61%);
+    font-weight: 400;
+}

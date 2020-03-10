@@ -1,0 +1,196 @@
+
+%basic {
+    font-family: 'Be Vietnam', sans-serif;
+    text-decoration: none;
+    
+}
+
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem ;
+            .logo {
+                cursor: pointer;
+                    @include iphon-x {
+                        width: 120px;
+                    }
+                    
+            }
+            .nav-li {
+                list-style: none;
+                @include navbar {
+                    margin-left: 100px;
+                    
+                }
+                li {
+                    @extend %basic;
+                    font-weight: 700;
+                    font-size: 14px;
+                    display: inline-block;
+                    padding: 0 15px;
+                    @include navbar {
+                        display: none;
+                    }
+                   
+                    a {
+                        @extend %basic;
+                        color: hsl(228, 39%, 23%);
+                        &:hover {
+                            color: hsl(227, 12%, 61%);
+                            transition: all 500ms ease-out;
+                        }
+                    }
+                }
+            }
+            button {
+                @extend %basic;
+                padding: 12px 2rem;
+                color: #fff;
+                background-color: hsl(12, 88%, 59%);
+                font-weight: 700;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                @include navbar {
+                    display: none;
+                }
+                &:hover {
+                    opacity: 0.7;
+                    transition: all 500ms ease-out;
+                }
+            } 
+            
+            .toggle {
+                cursor: pointer;
+                @include grid {
+                    display : none;
+                }
+                
+                .lines {
+                    background: hsl(228, 39%, 23%);
+                    display: inline-block;
+                    height: 4px;
+                    width: 22px;
+                    position: relative;
+                    right: 0;
+                    &::before {
+                        content: "";
+                        background: hsl(228, 39%, 23%);
+                        display: inline-block;
+                        height: 4px;
+                        width: 22px;
+                        position: absolute;
+                        right: 0;
+                        top: 7px;
+                    }
+                    &::after {
+                        content: "";
+                        background: hsl(228, 39%, 23%);
+                        display: inline-block;
+                        height: 4px;
+                        width: 22px;
+                        position: absolute;
+                        right: 0;
+                        top: -7px;
+                    }
+
+                }
+            }
+    }
+
+    .head {
+        max-width: 1440px;      
+        text-align: center;
+        margin: 30px 0px;
+        @include grid {
+            margin: 100px 0px;
+        }
+        @include grid {
+            margin: 50px auto;
+            display: grid ;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 
+            " primary card "  ;
+        }
+
+        .analyse {
+            @include grid {
+                grid-area: card;
+                margin-right: 110px;
+            }
+            img {
+                @include iphon-x {
+                    width: 310px;
+                }
+                @include tablet {
+                    width: 600px;
+                }
+                @include grid {
+                    width: 460px;
+                }
+                @include size {
+                    width: 580px;
+                }
+
+            }
+        }
+        .presentation {
+            font-family: 'Be Vietnam', sans-serif;
+            margin: 0 30px;
+            @include grid {
+                grid-area: primary;
+                text-align: left;
+                margin-left: 140px;
+            }
+            
+            h1 {
+                font-weight: 800;
+                color: hsl(228, 39%, 23%);
+
+                @include tablet {
+                    font-size: 50px;
+                }
+               
+                @include grid {
+                    font-size: 40px;
+                }
+                @include size {
+                    font-size: 58px;
+                }
+            }
+            p {
+                font-weight: 400;
+                color: hsl(227, 12%, 61%);
+                margin-top: 10px;
+                margin-bottom: 40px;
+
+                @include tablet {
+                    margin: 30px 150px 50px 150px;
+                }
+                  
+                @include grid {
+                    margin: 24px 110px 50px 0;
+                }       
+                @include size {
+                    margin: 33px 200px 50px 0;
+                }      
+            }
+            button {
+                @extend %basic;
+                padding: 12px 2rem;
+                color: #fff;
+                background-color: hsl(12, 88%, 59%);
+                font-weight: 700;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.7;
+                    transition: all 500ms ease-out;
+                }
+            }
+        }
+    }
+}

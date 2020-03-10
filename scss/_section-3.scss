@@ -1,0 +1,47 @@
+.sec-3 {
+    font-family: 'Be Vietnam', sans-serif;
+    background-color: hsl(12, 88%, 59%);
+    padding: 100px 0;
+    .content {
+        width: 381px;
+        text-align: center;
+        @include grid {
+            width: 100%;
+            text-align: left;
+            display: grid;
+            grid-template-columns: 70% 30%;
+        }
+        h1 {
+            letter-spacing: -1px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 40px;
+            padding: 0 30px;
+            color: #fff;
+            @include grid {
+                margin-left: 136px;
+            }
+            @include size {
+                padding-right: 500px;
+            }
+        }
+        button {
+            @extend %basic;
+            padding: 12px 2rem;
+            color: hsl(12, 88%, 59%);
+            background-color: #fff;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            &:hover {
+                color: hsl(12, 76%, 84%);
+                transition: all 500ms ease-out;
+            }
+            @include grid {
+                margin-top: 20px;
+                
+            }
+        }
+    }
+}

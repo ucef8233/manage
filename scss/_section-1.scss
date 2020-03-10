@@ -1,0 +1,83 @@
+.sec-1 {
+    font-family: 'Be Vietnam', sans-serif;
+    margin-top: 100px;
+    max-width: 1440px;
+    @include grid {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        " primary card ";
+    }
+    .sec-1-heading {
+        text-align: center;
+        margin-bottom: 60px;
+        @include grid {
+            grid-area: primary;
+            text-align: left;
+            margin-left: 85px;
+        }
+        h1 {
+            font-weight: 800;
+            color: hsl(228, 39%, 23%);
+            margin: 0 50px;
+            letter-spacing: -1px;
+            @include grid {
+               
+                font-size: 45px;
+                
+            }
+        }
+        p {
+            font-weight: 400;
+            color: hsl(227, 12%, 61%);
+            margin: 20px 20px;
+            @include grid {
+                margin-left: 50px;
+            }
+        }
+    }
+    .sec-1-offers {
+        @include grid {
+            grid-area: card;
+        }
+        .card {
+            @include grid {
+                margin-left: 50px;
+            }
+            .head {
+                display: flex;
+                align-items: center;
+                background-color: hsl(13, 100%, 96%);
+                margin-bottom: 10px;
+                @include grid {
+                    background-color: #fff;
+                    
+                }
+                
+                .number {
+                    background-color: hsl(12, 88%, 59%);
+                    color: #fff;
+                    padding: 8px 25px;
+                    border: none;
+                    border-radius: 30px;
+                    font-weight: 500;
+                    margin: 0 20px 0 0;
+                }
+                .title {
+                    font-weight: 700;
+                    margin: 0;
+                }
+            }
+            .para {
+                color: hsl(227, 12%, 61%);
+                margin-bottom: 50px;
+                font-size: 15px;
+                @include grid {
+                    margin-right: 155px;
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+}

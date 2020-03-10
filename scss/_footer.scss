@@ -1,0 +1,117 @@
+.container {
+    padding: 50px 10px 30px 10px;
+    background-color: #161616;
+   
+    &_updates {
+        text-align: center;
+       
+        form {
+            margin: 0 15px;
+            input {
+                width: 70%;
+                padding: 1rem 20px 0.8rem 25px;
+                border: none;
+                font-weight: 500;
+                border: none;
+                border-radius: 50px;
+                margin-right: 4px;
+                &::placeholder {
+                    color: hsl(227, 12%, 61%);
+                }
+            }
+                
+            button {
+                    @extend %basic;
+                    padding: 13px 2rem;
+                    color: #fff;
+                    background-color: hsl(12, 88%, 59%);
+                    font-weight: 700;
+                    border: none;
+                    border-radius: 50px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 0.7;
+                        transition: all 500ms ease-out;
+                    }
+            }
+        }
+    }
+    &_listes {
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-family: 'Be Vietnam', sans-serif;
+      
+        &_one {
+        
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 20px;
+                    a {
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 0.95rem;
+                        color: #fff;
+                        &:hover {
+                            color: hsl(12, 88%, 59%);
+                            transition: all 500ms ease-out;
+                        }
+                    }
+                }
+            }
+        }
+        &_two {
+
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 20px;
+                    a {
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 0.95rem;
+                        color: #fff;
+                        &:hover {
+                            color: hsl(12, 88%, 59%);
+                            transition: all 500ms ease-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        &_icon {
+            text-align: center;
+            margin-bottom: 50px;
+            display: grid;
+            grid-template-columns: repeat(5, 20%);
+            padding: 0 10px;
+            a {
+                img {
+                    width: 35px;
+                    &:hover {
+                        background-color: hsl(12, 88%, 59%);
+                    }
+                }
+            }
+        }
+    
+        &_brand {
+            text-align: center;
+            margin-bottom: 40px;
+            img {
+                width: 165px;
+            }
+        }
+
+    &_copyright {
+        font-family: 'Be Vietnam', sans-serif;
+        text-align: center;
+        font-size: 0.8rem;
+        color: hsl(227, 12%, 61%);
+        
+
+    }
+}
